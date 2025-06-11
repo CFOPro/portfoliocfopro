@@ -1,6 +1,5 @@
-import React from 'react';
-import { Header, Footer } from './components/layout';
-import { Hero, About, Services, Contact } from './components/sections';
+import { Footer, Header } from './components/layout';
+import { About, Contact, Hero, Process, Services, Showcase } from './components/sections';
 
 function App() {
   return (
@@ -10,6 +9,8 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Process />
+        <Showcase />
         <Contact />
       </main>
       <Footer />

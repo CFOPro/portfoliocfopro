@@ -1,4 +1,4 @@
-// Core types for the business landing page
+// Core types for the CFOPro business landing page
 export interface NavigationItem {
   id: string;
   label: string;
@@ -29,29 +29,6 @@ export interface Service {
   features?: string[];
 }
 
-export interface Product {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-  features: string[];
-  price?: string;
-  category?: string;
-}
-
-export interface TeamMember {
-  id: string;
-  name: string;
-  position: string;
-  image: string;
-  bio: string;
-  social?: {
-    linkedin?: string;
-    twitter?: string;
-    email?: string;
-  };
-}
-
 export interface Company {
   name: string;
   description: string;
@@ -60,7 +37,8 @@ export interface Company {
   values: string[];
   founded: string;
   employees?: string;
-  location: string;
+  location?: string;
+  specialties?: string[];
 }
 
 export interface ContactInfo {
@@ -74,10 +52,8 @@ export interface ContactInfo {
     country: string;
   };
   social: {
-    facebook?: string;
-    twitter?: string;
     linkedin?: string;
-    instagram?: string;
+    calendly?: string;
   };
 }
 
@@ -97,4 +73,33 @@ export interface FAQ {
   id: string;
   question: string;
   answer: string;
-} 
+}
+
+// CFOPro specific types
+export interface ProcessStep {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ClientSegment {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ValueProposition {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ShowcaseImage {
+  id: string;
+  src: string;
+  alt: string;
+  title: string;
+}

@@ -1,31 +1,28 @@
 import type {
-  NavigationItem,
-  Hero,
-  Service,
-  Product,
-  TeamMember,
   Company,
   ContactInfo,
-  Testimonial,
   FAQ,
+  Hero,
+  NavigationItem,
+  Service,
+  ShowcaseImage
 } from '../core/types';
 
 export const navigationItems: NavigationItem[] = [
   { id: 'home', label: 'Home', href: '#home' },
   { id: 'about', label: 'About', href: '#about' },
   { id: 'services', label: 'Services', href: '#services' },
-  { id: 'products', label: 'Products', href: '#products' },
-  { id: 'team', label: 'Team', href: '#team' },
+  { id: 'process', label: 'Process', href: '#process' },
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
 
 export const heroData: Hero = {
-  title: 'Transform Your Business',
-  subtitle: 'Professional Solutions',
-  description: 'We provide comprehensive business solutions that help companies streamline operations, increase efficiency, and drive sustainable growth.',
+  title: 'Strategic Financial Leadership—When You Need It Most',
+  subtitle: 'Outsourced Controller & CFO Services for Startups and Small Businesses',
+  description: 'CFOPro, LLC specializes in outsourced Accounting, Controller and CFO services, delivering the financial expertise that growing companies need to scale with confidence and increase profitability.',
   primaryButton: {
-    text: 'Get Started',
-    href: '#contact',
+    text: 'Schedule Consultation',
+    href: 'https://calendly.com/solutions-cfopro/30min',
   },
   secondaryButton: {
     text: 'Learn More',
@@ -35,209 +32,215 @@ export const heroData: Hero = {
 
 export const services: Service[] = [
   {
-    id: 'consulting',
-    title: 'Business Consulting',
-    description: 'Strategic guidance to optimize your business operations and drive growth.',
-    icon: '📊',
-    features: ['Strategic Planning', 'Process Optimization', 'Market Analysis', 'Growth Strategies'],
-  },
-  {
-    id: 'financial',
-    title: 'Financial Services',
-    description: 'Comprehensive financial management and planning for your business.',
-    icon: '💰',
-    features: ['Financial Planning', 'Budget Management', 'Investment Advice', 'Risk Assessment'],
-  },
-  {
-    id: 'technology',
-    title: 'Technology Solutions',
-    description: 'Modern technology implementations to enhance your business efficiency.',
+    id: 'accounting',
+    title: 'Outsourced Accounting Services',
+    description: 'Essential day-to-day financial support to keep your business compliant, organized, and financially transparent while uncovering opportunities to improve margins and profitability.',
     icon: '💻',
-    features: ['Digital Transformation', 'Software Integration', 'Cloud Solutions', 'IT Support'],
+    features: [
+      'End-to-end bookkeeping and transaction management',
+      'Payroll processing and vendor payments',
+      'Accounts receivable and collections',
+      'Financial reporting and month-end close support',
+      'Tax filing coordination and compliance',
+      'Integration with QuickBooks, Xero, and NetSuite'
+    ],
   },
   {
-    id: 'marketing',
-    title: 'Marketing & Sales',
-    description: 'Comprehensive marketing strategies to expand your market reach.',
+    id: 'controller',
+    title: 'Outsourced Controller Services',
+    description: 'Experienced controllers providing financial discipline your business needs to scale effectively and become more profitable, acting as a hands-on extension of your leadership team.',
+    icon: '🧾',
+    features: [
+      'Accurate, GAAP-compliant financial reporting',
+      'Budgeting, forecasting, and variance analysis',
+      'Internal controls and audit readiness',
+      'Monthly close and executive reporting packages',
+      'Staff training and accounting team development',
+      'Policy creation and workflow standardization'
+    ],
+  },
+  {
+    id: 'cfo',
+    title: 'Fractional CFO Services',
+    description: 'Strategic financial direction for startups and growth-stage businesses, focused on sustainable profitability and long-term value creation.',
     icon: '📈',
-    features: ['Digital Marketing', 'Brand Development', 'Sales Strategy', 'Customer Acquisition'],
+    features: [
+      'Long-term financial strategy and modeling',
+      'Fundraising support and investor communications',
+      'Scenario planning and performance benchmarking',
+      'Board-level reporting and advisory',
+      'KPI design, tracking, and interpretation',
+      'Exit planning and succession guidance'
+    ],
+  },
+  {
+    id: 'supporting',
+    title: 'Supporting Accounting Services',
+    description: 'Foundational accounting support ensuring financial systems run smoothly with cloud-based solutions for real-time visibility and seamless integration.',
+    icon: '💼',
+    features: [
+      'Bookkeeping and transaction management',
+      'Payroll and vendor payment processing',
+      'Accounts receivable and collections support',
+      'Tax reporting coordination',
+      'System implementation and software optimization',
+      'Real-time financial dashboard setup'
+    ],
   },
 ];
 
-export const products: Product[] = [
+export const processSteps = [
   {
-    id: 'business-suite',
-    name: 'Business Management Suite',
-    description: 'Complete business management platform with integrated tools for operations, finance, and customer management.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Customer Relationship Management',
-      'Financial Tracking & Reporting',
-      'Project Management Tools',
-      'Team Collaboration Features',
-      'Real-time Analytics Dashboard',
-    ],
-    price: 'Starting at $99/month',
-    category: 'Software',
+    id: 'assess',
+    title: 'Assess',
+    description: 'We begin with a strategic discovery session to evaluate your financial operations, identify risks, and uncover opportunities. This includes a review of your accounting systems, reporting practices, and financial performance.',
+    icon: '🔍',
   },
   {
-    id: 'analytics-pro',
-    name: 'Analytics Pro',
-    description: 'Advanced analytics platform providing deep insights into your business performance and market trends.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Real-time Data Visualization',
-      'Predictive Analytics',
-      'Custom Reporting',
-      'Integration with Multiple Data Sources',
-      'AI-powered Insights',
-    ],
-    price: 'Starting at $149/month',
-    category: 'Analytics',
+    id: 'design',
+    title: 'Design',
+    description: 'Based on our findings, we create a tailored engagement plan that aligns with your business goals. This plan outlines the scope of services, priorities, timeline, and measurable outcomes.',
+    icon: '📋',
   },
   {
-    id: 'consulting-package',
-    name: 'Strategic Consulting Package',
-    description: 'Comprehensive consulting service to transform your business strategy and operations.',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    features: [
-      'Business Strategy Development',
-      'Market Research & Analysis',
-      'Operational Efficiency Review',
-      'Growth Planning',
-      'Implementation Support',
-    ],
-    price: 'Custom pricing',
-    category: 'Consulting',
+    id: 'implement',
+    title: 'Implement',
+    description: 'Our team works seamlessly with your internal team members to execute the plan. We integrate modern financial systems, refine reporting workflows, and provide ongoing leadership to drive accountability and results.',
+    icon: '🚀',
   },
 ];
 
-export const teamMembers: TeamMember[] = [
+export const whoWeServe = [
   {
-    id: 'john-doe',
-    name: 'John Doe',
-    position: 'Chief Executive Officer',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'John brings over 15 years of experience in business strategy and operations management.',
-    social: {
-      linkedin: 'https://linkedin.com/in/johndoe',
-      email: 'john@cfopro.com',
-    },
+    id: 'startups',
+    title: 'Startup Founders',
+    description: 'Get financial clarity and investor-ready reporting from the ground up.',
+    icon: '🚀',
   },
   {
-    id: 'jane-smith',
-    name: 'Jane Smith',
-    position: 'Chief Financial Officer',
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'Jane is a certified CPA with extensive experience in financial planning and risk management.',
-    social: {
-      linkedin: 'https://linkedin.com/in/janesmith',
-      email: 'jane@cfopro.com',
-    },
+    id: 'small-business',
+    title: 'Small Business Owners',
+    description: 'Build structure and discipline into your finances as you grow.',
+    icon: '🏢',
   },
   {
-    id: 'mike-johnson',
-    name: 'Mike Johnson',
-    position: 'Chief Technology Officer',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'Mike leads our technology initiatives with expertise in digital transformation and software development.',
-    social: {
-      linkedin: 'https://linkedin.com/in/mikejohnson',
-      email: 'mike@cfopro.com',
-    },
+    id: 'investors',
+    title: 'Investors & Portfolio Companies',
+    description: 'Strengthen financial oversight across your investments.',
+    icon: '📊',
+  },
+];
+
+export const whyChooseUs = [
+  {
+    id: 'expertise',
+    title: 'Dedicated Expertise',
+    description: 'Specialized in Outsourced Controller and CFO services to strengthen financial operations and drive strategy.',
+    icon: '✅',
+  },
+  {
+    id: 'access',
+    title: 'On-Demand Access',
+    description: 'Senior-level financial leadership without the cost of a full-time hire.',
+    icon: '✅',
+  },
+  {
+    id: 'systems',
+    title: 'Proven Systems',
+    description: 'Established tools and processes that support accountability and scale.',
+    icon: '✅',
+  },
+  {
+    id: 'solutions',
+    title: 'Tailored Solutions',
+    description: 'Services that evolve with your company\'s growth and complexity.',
+    icon: '✅',
+  },
+  {
+    id: 'trust',
+    title: 'Trusted Partner',
+    description: 'Reliable partner to founders, investors, and accelerator programs nationwide.',
+    icon: '✅',
   },
 ];
 
 export const companyInfo: Company = {
-  name: 'CFO Pro Business Solutions',
-  description: 'We are a leading provider of comprehensive business solutions, helping companies of all sizes achieve their goals through strategic planning, innovative technology, and expert guidance.',
-  mission: 'To empower businesses with the tools, knowledge, and strategies they need to thrive in an ever-evolving marketplace.',
-  vision: 'To be the trusted partner that transforms how businesses operate, making success accessible to organizations worldwide.',
+  name: 'CFOPro, LLC',
+  description: 'CFOPro, LLC specializes in outsourced Accounting, Controller and CFO services, delivering the financial expertise that growing companies need to scale with confidence and increase profitability. Whether you\'re managing day-to-day accounting operations or planning for long-term growth, our team acts as your financial partner—bringing structure, clarity, and insight to help maximize profitability at every stage of your business.',
+  mission: 'To empower business leaders with the insights, discipline, and structure to scale smarter and faster while building long-term relationships and driving sustainable profitability.',
+  vision: 'To turn financial complexity into strategic opportunity, and profit-driven growth into reality for startups and small businesses nationwide.',
   values: [
-    'Excellence in everything we do',
-    'Innovation that drives progress',
-    'Integrity in all our relationships',
-    'Collaboration for mutual success',
-    'Customer-centric approach',
+    'Profitability First - Uncover hidden profit opportunities and improve margins',
+    'Strategic Partnership - Ongoing access to senior financial leadership',
+    'Built for Growth - Services that evolve as your needs change',
+    'Real-World Experience - Decades of hands-on finance and operational knowledge',
+    'No Guesswork - Proven frameworks and data-driven insights'
   ],
-  founded: '2015',
-  employees: '50+',
-  location: 'New York, USA',
+  founded: '2020',
+  employees: '2-10',
+  specialties: ['Outsourced Accounting', 'Controller Services', 'Fractional CFO', 'Financial Strategy'],
 };
 
 export const contactInfo: ContactInfo = {
-  email: 'contact@cfopro.com',
-  phone: '(555) 123-4567',
+  email: 'solutions@cfopro.io',
+  phone: '(407) 705-3498',
   address: {
-    street: '123 Business Ave',
-    city: 'New York',
-    state: 'NY',
-    zipCode: '10001',
+    street: '20 N Orange Ave, Suite 1100',
+    city: 'Orlando',
+    state: 'FL',
+    zipCode: '32801',
     country: 'USA',
   },
   social: {
-    facebook: 'https://facebook.com/cfopro',
-    twitter: 'https://twitter.com/cfopro',
-    linkedin: 'https://linkedin.com/company/cfopro',
-    instagram: 'https://instagram.com/cfopro',
+    linkedin: 'https://www.linkedin.com/company/cfopro/?viewAsMember=true',
+    calendly: 'https://calendly.com/solutions-cfopro/30min',
   },
 };
 
-export const testimonials: Testimonial[] = [
-  {
-    id: 'testimonial-1',
-    content: 'CFO Pro transformed our business operations completely. Their strategic guidance helped us increase efficiency by 40% and reduce costs significantly.',
-    author: {
-      name: 'Sarah Wilson',
-      position: 'CEO',
-      company: 'TechStart Inc.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    },
-    rating: 5,
-  },
-  {
-    id: 'testimonial-2',
-    content: 'The team at CFO Pro provided exceptional financial consulting that helped us secure funding and optimize our financial strategy.',
-    author: {
-      name: 'David Chen',
-      position: 'Founder',
-      company: 'GrowthCorp',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    },
-    rating: 5,
-  },
-  {
-    id: 'testimonial-3',
-    content: 'Working with CFO Pro was a game-changer. Their technology solutions streamlined our processes and improved our customer satisfaction.',
-    author: {
-      name: 'Emily Rodriguez',
-      position: 'Operations Manager',
-      company: 'ServicePro LLC',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    },
-    rating: 5,
-  },
-];
+// Additional phone number for contact
+export const additionalPhone = '(407) 716-7988';
 
 export const faqs: FAQ[] = [
   {
     id: 'faq-1',
-    question: 'What types of businesses do you work with?',
-    answer: 'We work with businesses of all sizes, from startups to enterprise companies, across various industries including technology, healthcare, finance, retail, and manufacturing.',
+    question: 'What makes CFOPro different from other accounting firms?',
+    answer: 'We specialize exclusively in Controller and CFO-level services for growing businesses. Our focus is on strategic financial leadership, not just bookkeeping. We bring senior-level expertise to help you scale profitably.',
   },
   {
     id: 'faq-2',
-    question: 'How long does a typical consulting engagement take?',
-    answer: 'The duration varies depending on the scope and complexity of your needs. Most engagements range from 3-6 months, but we can accommodate shorter strategic sessions or longer transformation projects.',
+    question: 'How quickly can you help improve our financial operations?',
+    answer: 'Most clients see immediate improvements in financial clarity within 30 days. Our proven assessment and implementation process is designed to deliver quick wins while building long-term financial strength.',
   },
   {
     id: 'faq-3',
-    question: 'Do you offer ongoing support after implementation?',
-    answer: 'Yes, we provide comprehensive ongoing support including training, maintenance, and continuous optimization to ensure your continued success.',
+    question: 'Do you work with companies outside the US?',
+    answer: 'Yes, we work with clients nationwide and can adapt our services for companies with international operations. Our cloud-based approach enables seamless collaboration regardless of location.',
   },
   {
     id: 'faq-4',
-    question: 'Can you customize solutions for our specific industry?',
-    answer: 'Absolutely. All our solutions are tailored to meet the specific needs and requirements of your industry and business model.',
+    question: 'What size companies do you typically work with?',
+    answer: 'We primarily serve startups and small businesses with revenues between $500K and $50M. Our services are designed to scale with your growth from early-stage through exit preparation.',
   },
-]; 
+];
+
+// Business showcase images
+export const showcaseImages: ShowcaseImage[] = [
+  {
+    id: 'showcase-1',
+    src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Business professionals collaborating on financial strategy',
+    title: 'Strategic Financial Planning',
+  },
+  {
+    id: 'showcase-2',
+    src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Modern financial dashboard and analytics',
+    title: 'Real-time Financial Analytics',
+  },
+  {
+    id: 'showcase-3',
+    src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'CFO presenting to board of directors',
+    title: 'Board-Level Financial Leadership',
+  },
+];
