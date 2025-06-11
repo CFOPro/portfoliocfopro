@@ -125,7 +125,7 @@ export const Hero: React.FC = () => {
 
           {/* Trust Indicators */}
           <div className="mt-12 lg:mt-20 text-center px-4 sm:px-0">
-            <p className="text-neutral-500 text-xs sm:text-sm mb-6 lg:mb-8 font-medium">TRUSTED BY GROWING BUSINESSES</p>
+                         <p className="text-neutral-500 text-xs sm:text-sm mb-6 lg:mb-8 font-medium">Trusted BY Growing Businesses</p>
             <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 opacity-60">
               <div className="text-neutral-400 font-semibold text-sm sm:text-base lg:text-lg">TechFlow</div>
               <div className="text-neutral-400 font-semibold text-sm sm:text-base lg:text-lg">Growth Ventures</div>

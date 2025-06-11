@@ -18,7 +18,7 @@ export const navigationItems: NavigationItem[] = [
 
 export const heroData: Hero = {
   title: 'Strategic Financial Leadership—When You Need It Most',
-  subtitle: 'Outsourced Controller & CFO Services for Startups and Small Businesses',
+  subtitle: 'Outsourced Controller & CFO Services for Startups, Small, and Mid-Size Businesses',
   description: 'CFOPro, LLC specializes in outsourced Accounting, Controller and CFO services, delivering the financial expertise that growing companies need to scale with confidence and increase profitability.',
   primaryButton: {
     text: 'Schedule Consultation',
@@ -166,15 +166,17 @@ export const whyChooseUs = [
 
 export const companyInfo: Company = {
   name: 'CFOPro, LLC',
-  description: 'CFOPro, LLC specializes in outsourced Accounting, Controller and CFO services, delivering the financial expertise that growing companies need to scale with confidence and increase profitability. Whether you\'re managing day-to-day accounting operations or planning for long-term growth, our team acts as your financial partner—bringing structure, clarity, and insight to help maximize profitability at every stage of your business.',
-  mission: 'To empower business leaders with the insights, discipline, and structure to scale smarter and faster while building long-term relationships and driving sustainable profitability.',
-  vision: 'To turn financial complexity into strategic opportunity, and profit-driven growth into reality for startups and small businesses nationwide.',
+  description: 'At CFOPro, we prioritize your success. With a dedicated team of financial experts, we offer personalized solutions to optimize your financial performance and drive your business forward. Together, we navigate complexities, seize opportunities, and achieve new heights of success.',
+  mission: 'Let CFOPro provide exceptional financial expertise and tailored accounting solutions that empower our clients to thrive in a developing, growing and evolving business environment. We are committed to be your strategic partner in your entrepreneurial journey, providing guidance and invaluable assistance to ensure your ongoing success.',
+  vision: 'To be the trusted partner of choice for enterprises seeking strategic financial and accounting services. We aim to contribute meaningful value to the financial growth and sustainability of our clients across diverse industries, ensuring their business success.',
   values: [
-    'Profitability First - Uncover hidden profit opportunities and improve margins',
-    'Strategic Partnership - Ongoing access to senior financial leadership',
-    'Built for Growth - Services that evolve as your needs change',
-    'Real-World Experience - Decades of hands-on finance and operational knowledge',
-    'No Guesswork - Proven frameworks and data-driven insights'
+    'Integrity - We uphold the highest ethical standards ensuring trustworthiness, reliability, and accountability in all of our interactions and business practices.',
+    'Excellence - We continuously invest in the development of our team and stay abreast of industry best practices to deliver superior accounting services.',
+    'Client-Centric Focus - We listen, understand, and tailor our services to meet each of our clients\' unique needs and goals.',
+    'Innovation - We embrace innovation to enhance efficiency and effectiveness. We proactively seek new technologies and methodologies to improve our processes.',
+    'Client Process Optimization - We are committed to enhancing and streamlining our clients\' processes to ensure efficiency, accuracy, and effectiveness.',
+    'Collaboration - We value teamwork and believe that the collective expertise of our team members is essential for delivering exceptional results.',
+    'Continuous Learning - We promote a culture of continuous learning and professional development.'
   ],
   founded: '2020',
   employees: '2-10',

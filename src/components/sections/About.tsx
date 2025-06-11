@@ -16,7 +16,7 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="px-4 sm:px-0">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-neutral-900">About {companyInfo.name}</h2>
+                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-primary-600">About {companyInfo.name}</h2>
             <p className="text-lg sm:text-xl mb-6 lg:mb-8 text-neutral-600 leading-relaxed">
               {companyInfo.description}
             </p>
@@ -74,17 +74,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Specialties Section */}
-        <div className="mt-16 lg:mt-20 text-center px-4 sm:px-0">
-          <h3 className="text-xl sm:text-2xl font-bold mb-6 lg:mb-8 text-neutral-900">Our Specialties</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            {companyInfo.specialties?.map((specialty, index) => (
-              <div key={index} className="bg-white p-4 sm:p-5 lg:p-6 rounded-lg lg:rounded-xl shadow-soft hover:shadow-card transition-shadow duration-300">
-                <div className="text-primary-600 font-semibold text-sm sm:text-base">{specialty}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </Container>
     </section>
   );
