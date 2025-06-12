@@ -1,0 +1,171 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "triggers": {
+      "manual": {
+        "type": "Request",
+        "kind": "Http",
+        "inputs": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "documents": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "userAgent": {
+                "type": "string"
+              },
+              "referrer": {
+                "type": "string"
+              },
+              "pageUrl": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "actions": {
+      "Add_a_row_into_a_table": {
+        "runAfter": {},
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": {
+            "connectionName": "shared_excelonlinebusiness",
+            "operationId": "AddRowV2",
+            "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+          },
+          "parameters": {
+            "source": "OneDriveForBusiness",
+            "drive": "OneDriveForBusiness",
+            "file": "CFOPro Leads.xlsx",
+            "table": "Table1",
+            "body": {
+              "Timestamp": "@triggerBody()?['timestamp']",
+              "Email": "@triggerBody()?['email']",
+              "First Name": "@triggerBody()?['firstName']",
+              "Last Name": "@triggerBody()?['lastName']",
+              "Company": "@triggerBody()?['company']",
+              "Documents": "@triggerBody()?['documents']",
+              "Source": "@triggerBody()?['source']",
+              "User Agent": "@triggerBody()?['userAgent']",
+              "Referrer": "@triggerBody()?['referrer']",
+              "Page URL": "@triggerBody()?['pageUrl']"
+            }
+          },
+          "authentication": "@parameters('$authentication')"
+        }
+      },
+      "Send_an_email_(V2)": {
+        "runAfter": {
+          "Add_a_row_into_a_table": ["Succeeded"]
+        },
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": {
+            "connectionName": "shared_office365",
+            "operationId": "SendEmailV2",
+            "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+          },
+          "parameters": {
+            "emailMessage": {
+              "To": "your-email@company.com",
+              "Subject": "New Lead Captured - CFOPro",
+              "Body": "<p><strong>New Lead Information:</strong></p><p><strong>Email:</strong> @{triggerBody()?['email']}<br><strong>Name:</strong> @{triggerBody()?['firstName']} @{triggerBody()?['lastName']}<br><strong>Company:</strong> @{triggerBody()?['company']}<br><strong>Documents:</strong> @{triggerBody()?['documents']}<br><strong>Timestamp:</strong> @{triggerBody()?['timestamp']}<br><strong>Source:</strong> @{triggerBody()?['source']}</p><p><strong>Technical Details:</strong><br><strong>Page URL:</strong> @{triggerBody()?['pageUrl']}<br><strong>Referrer:</strong> @{triggerBody()?['referrer']}</p>",
+              "Importance": "High"
+            }
+          },
+          "authentication": "@parameters('$authentication')"
+        }
+      },
+      "Post_message_in_a_chat_or_channel": {
+        "runAfter": {
+          "Send_an_email_(V2)": ["Succeeded"]
+        },
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": {
+            "connectionName": "shared_teams",
+            "operationId": "PostMessageToConversation",
+            "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+          },
+          "parameters": {
+            "poster": "Flow bot",
+            "location": "Channel",
+            "body": {
+              "messageBody": "🎯 **New Lead Captured!**\n\n📧 **Email:** @{triggerBody()?['email']}\n👤 **Name:** @{triggerBody()?['firstName']} @{triggerBody()?['lastName']}\n🏢 **Company:** @{triggerBody()?['company']}\n📄 **Documents:** @{triggerBody()?['documents']}\n🕐 **Time:** @{triggerBody()?['timestamp']}\n🌐 **Source:** @{triggerBody()?['source']}\n\n[View in Excel](https://office.com)"
+            }
+          },
+          "authentication": "@parameters('$authentication')"
+        }
+      },
+      "Response": {
+        "runAfter": {
+          "Post_message_in_a_chat_or_channel": [
+            "Succeeded",
+            "Failed",
+            "Skipped"
+          ]
+        },
+        "type": "Response",
+        "kind": "Http",
+        "inputs": {
+          "statusCode": 200,
+          "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type"
+          },
+          "body": {
+            "success": true,
+            "message": "Lead captured successfully"
+          }
+        }
+      }
+    },
+    "outputs": {}
+  },
+  "parameters": {
+    "$connections": {
+      "value": {
+        "shared_excelonlinebusiness": {
+          "connectionId": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Web/connections/shared_excelonlinebusiness",
+          "connectionName": "shared_excelonlinebusiness",
+          "id": "/subscriptions/{subscription-id}/providers/Microsoft.Web/locations/{location}/managedApis/excelonlinebusiness"
+        },
+        "shared_office365": {
+          "connectionId": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Web/connections/shared_office365",
+          "connectionName": "shared_office365",
+          "id": "/subscriptions/{subscription-id}/providers/Microsoft.Web/locations/{location}/managedApis/office365"
+        },
+        "shared_teams": {
+          "connectionId": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Web/connections/shared_teams",
+          "connectionName": "shared_teams",
+          "id": "/subscriptions/{subscription-id}/providers/Microsoft.Web/locations/{location}/managedApis/teams"
+        }
+      }
+    }
+  }
+}

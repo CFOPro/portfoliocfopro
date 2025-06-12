@@ -60,7 +60,7 @@ export const submitLeadToPowerAutomate = async (
     }
 
     // Power Automate typically returns a 200 OK with the response
-    const result = await response.json();
+    await response.json();
 
     return {
       success: true,
@@ -128,7 +128,7 @@ export const submitLeadToMicrosoftGraph = async (
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const result = await response.json();
+    await response.json();
 
     return {
       success: true,
