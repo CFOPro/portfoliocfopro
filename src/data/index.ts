@@ -119,7 +119,7 @@ export const whoWeServe = [
   },
   {
     id: 'small-business',
-    title: 'Small Business Owners',
+    title: 'Small Business Owners,and Mid-Size Businesses',
     description: 'Build structure and discipline into your finances as you grow.',
     icon: '🏢',
   },

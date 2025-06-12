@@ -36,9 +36,9 @@ export const Header: React.FC = () => {
               </div>
 
               {/* Company Name */}
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-900">
-                <span className="text-primary-600">{APP_CONFIG.name.split(',')[0]}</span>
-                <span className="text-neutral-600 text-base sm:text-lg lg:text-xl font-normal">, LLC</span>
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary-600">
+                <span>{APP_CONFIG.name.split(',')[0]}</span>
+                <span>, LLC</span>
               </h1>
             </div>
           </div>
