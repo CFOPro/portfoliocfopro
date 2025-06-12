@@ -103,3 +103,51 @@ export interface ShowcaseImage {
   alt: string;
   title: string;
 }
+
+// Lead Magnet types
+export interface DownloadableDocument {
+  id: string;
+  title: string;
+  description: string;
+  fileName: string;
+  filePath: string;
+  fileSize: string;
+  documentType: 'pdf' | 'excel' | 'word' | 'template';
+  icon: string;
+  downloadCount?: number;
+  featured?: boolean;
+}
+
+export interface LeadMagnetFormData {
+  email: string;
+  firstName?: string;
+  lastName?: string;
+  company?: string;
+  documentIds: string[];
+  timestamp: string;
+}
+
+export interface EmailSubmissionResponse {
+  success: boolean;
+  message: string;
+  error?: string;
+}
+
+export interface GoogleSheetsConfig {
+  spreadsheetId: string;
+  range: string;
+  apiKey?: string;
+}
+
+export interface LeadMagnetData {
+  title: string;
+  subtitle: string;
+  description: string;
+  benefits: string[];
+  documents: DownloadableDocument[];
+  formConfig: {
+    requiredFields: ('email' | 'firstName' | 'lastName' | 'company')[];
+    privacyPolicyUrl?: string;
+    termsOfServiceUrl?: string;
+  };
+}
