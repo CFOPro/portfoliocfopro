@@ -2,9 +2,9 @@ import { useCallback, useState } from 'react';
 import type { DownloadableDocument, LeadMagnetFormData } from '../core/types';
 import {
   downloadMultipleFiles,
-  submitLeadToGoogleSheets,
+  submitLeadToMicrosoft,
   validateLeadForm,
-} from '../lib/google-sheets';
+} from '../lib/microsoft-excel';
 
 export interface UseLeadMagnetState {
   formData: Partial<LeadMagnetFormData>;
@@ -146,8 +146,8 @@ export const useLeadMagnet = (): [UseLeadMagnetState, UseLeadMagnetActions] => {
           timestamp: new Date().toISOString(),
         };
 
-        // Submit to Google Sheets
-        const result = await submitLeadToGoogleSheets(submissionData);
+        // Submit to Microsoft Excel
+        const result = await submitLeadToMicrosoft(submissionData);
 
         if (result.success) {
           // Success - trigger downloads and show success state
