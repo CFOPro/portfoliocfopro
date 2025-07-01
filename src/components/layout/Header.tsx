@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center">
             <div className="flex items-center space-x-2 sm:space-x-3 bg-white p-1 rounded-lg">
               {/* Outlook Image como logo principal */}
-              <img src="/portfoliocfopro/Outlook-4fivdc51.png" alt="Outlook" className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg bg-white" />
+              <img src="/portfoliocfopro/Outlook-4fivdc51.png" alt="Outlook" className="w-40 h-40 object-contain rounded-lg -my-10" />
               {/* Company Name */}
             </div>
           </div>
