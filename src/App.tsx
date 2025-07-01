@@ -17,7 +17,7 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <LeadMagnet />
+        {/* <LeadMagnet /> */}
         <Process />
         <Showcase />
         <Contact />
