@@ -51,7 +51,7 @@ export const About: React.FC = () => {
           <div className="px-4 sm:px-0">
             <div className="relative mb-6 lg:mb-8">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/portfoliocfopro/images/about-team-image.jpg"
                 alt="CFOPro team providing strategic financial leadership"
                 className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-xl lg:rounded-2xl shadow-card"
               />

@@ -1,0 +1,35 @@
+REFERENCIA DE IMAGEN - HERO PRINCIPAL
+=====================================
+
+ARCHIVO: hero-main-image.txt
+UBICACIÓN: src/assets/images/
+
+DESCRIPCIÓN:
+Esta es la imagen principal que aparece en la sección Hero de la landing page.
+Es la imagen más importante y visible de todo el sitio.
+
+DETALLES TÉCNICOS:
+- Nombre del archivo que debes usar: hero-main-image.jpg (o .png)
+- Ubicación en el código: src/components/sections/Hero.tsx (línea 67)
+- URL actual: https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
+- Tamaño recomendado: 1200x800px (formato landscape)
+- Alt text actual: "CFOPro team providing strategic financial leadership to growing businesses"
+
+CONTEXTO DE USO:
+- Se muestra como imagen principal en la sección Hero
+- Aparece debajo del título principal y botones de CTA
+- Tiene un overlay gradiente oscuro en la parte inferior
+- Es responsive y se adapta a diferentes tamaños de pantalla
+- Tiene bordes redondeados y sombra
+
+SUGERENCIAS PARA TU IMAGEN:
+- Debe representar profesionales financieros o tu equipo
+- Idealmente mostrar colaboración o trabajo en equipo
+- Colores que combinen con el tema azul/gris del sitio
+- Alta calidad y profesional
+- Formato landscape (más ancha que alta)
+
+INSTRUCCIONES:
+1. Coloca tu imagen en esta carpeta con el nombre: hero-main-image.jpg
+2. Asegúrate de que tenga buena calidad y el tamaño recomendado
+3. La imagen se cargará automáticamente una vez que la coloques aquí 

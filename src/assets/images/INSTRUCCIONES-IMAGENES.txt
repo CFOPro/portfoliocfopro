@@ -1,0 +1,74 @@
+INSTRUCCIONES PARA REEMPLAZAR IMÁGENES - CFOPro Landing Page
+============================================================
+
+RESUMEN GENERAL:
+Tu landing page actualmente usa 4 imágenes que necesitas reemplazar con tus propias imágenes.
+He creado archivos de referencia individuales para cada una.
+
+IMÁGENES A REEMPLAZAR:
+======================
+
+1. HERO PRINCIPAL (IMAGEN MÁS IMPORTANTE)
+   - Archivo: hero-main-image.jpg
+   - Ubicación: Sección Hero (página principal)
+   - Tamaño: 1200x800px
+   - Contexto: Imagen principal debajo del título
+
+2. SHOWCASE 1 - PLANIFICACIÓN ESTRATÉGICA
+   - Archivo: showcase-image-1.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Primera imagen de la cuadrícula
+
+3. SHOWCASE 2 - ANÁLISIS EN TIEMPO REAL
+   - Archivo: showcase-image-2.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Segunda imagen de la cuadrícula
+
+4. SHOWCASE 3 - LIDERAZGO EJECUTIVO
+   - Archivo: showcase-image-3.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Tercera imagen de la cuadrícula
+
+PASOS PARA REEMPLAZAR:
+======================
+
+1. PREPARA TUS IMÁGENES:
+   - Redimensiona cada imagen al tamaño recomendado
+   - Optimiza la calidad (formato JPG o PNG)
+   - Asegúrate de que tengan buena resolución
+
+2. COLOCA LAS IMÁGENES:
+   - Copia cada imagen a esta carpeta: src/assets/images/
+   - Usa EXACTAMENTE los nombres de archivo especificados
+   - No cambies las extensiones (.jpg o .png)
+
+3. VERIFICA LA CARGA:
+   - Ejecuta: npm run dev
+   - Revisa que las imágenes se carguen correctamente
+   - Verifica en diferentes tamaños de pantalla
+
+ARCHIVOS DE REFERENCIA CREADOS:
+===============================
+- hero-main-image.txt (detalles de la imagen principal)
+- showcase-image-1.txt (detalles de la primera imagen del showcase)
+- showcase-image-2.txt (detalles de la segunda imagen del showcase)
+- showcase-image-3.txt (detalles de la tercera imagen del showcase)
+
+CONSEJOS IMPORTANTES:
+====================
+- Mantén la calidad profesional de las imágenes
+- Usa colores que combinen con el tema azul/gris del sitio
+- Asegúrate de que las imágenes representen bien tu negocio
+- Las imágenes deben ser relevantes para servicios financieros
+- Formato landscape (más ancha que alta) para todas las imágenes
+
+¿NECESITAS AYUDA?
+=================
+Si tienes problemas con el reemplazo de imágenes, revisa:
+1. Que los nombres de archivo sean exactos
+2. Que las imágenes estén en la carpeta correcta
+3. Que el servidor de desarrollo esté corriendo
+4. Que no haya errores en la consola del navegador 

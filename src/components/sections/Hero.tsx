@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
               {/* Main Hero Image */}
               <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  src="/portfoliocfopro/images/hero-main-image.jpg"
                   alt="CFOPro team providing strategic financial leadership to growing businesses"
                   className="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] object-cover"
                 />

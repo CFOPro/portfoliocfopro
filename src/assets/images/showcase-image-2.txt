@@ -1,0 +1,36 @@
+REFERENCIA DE IMAGEN - SHOWCASE 2
+==================================
+
+ARCHIVO: showcase-image-2.txt
+UBICACIÓN: src/assets/images/
+
+DESCRIPCIÓN:
+Esta es la segunda imagen que aparece en la sección Showcase/Gallery de la landing page.
+Se muestra en una cuadrícula de 3 imágenes que representan casos de éxito.
+
+DETALLES TÉCNICOS:
+- Nombre del archivo que debes usar: showcase-image-2.jpg (o .png)
+- Ubicación en el código: src/data/index.ts (línea 232)
+- URL actual: https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+- Tamaño recomendado: 800x600px (formato landscape)
+- Alt text actual: "Modern financial dashboard and analytics"
+- Título actual: "Real-time Financial Analytics"
+
+CONTEXTO DE USO:
+- Se muestra en la sección "Financial Excellence in Action"
+- Es la segunda imagen de una cuadrícula de 3 imágenes
+- Tiene un overlay gradiente oscuro
+- Incluye un título superpuesto: "Real-time Financial Analytics"
+- Tiene efectos hover con zoom y transiciones suaves
+
+SUGERENCIAS PARA TU IMAGEN:
+- Debe representar dashboards financieros o análisis en tiempo real
+- Pantallas con gráficos, métricas o KPIs
+- Herramientas de análisis financiero
+- Tecnología moderna y profesional
+- Formato landscape (4:3 ratio)
+
+INSTRUCCIONES:
+1. Coloca tu imagen en esta carpeta con el nombre: showcase-image-2.jpg
+2. Asegúrate de que tenga buena calidad y el tamaño recomendado
+3. La imagen se cargará automáticamente una vez que la coloques aquí 

@@ -1,0 +1,36 @@
+REFERENCIA DE IMAGEN - SHOWCASE 1
+==================================
+
+ARCHIVO: showcase-image-1.txt
+UBICACIÓN: src/assets/images/
+
+DESCRIPCIÓN:
+Esta es la primera imagen que aparece en la sección Showcase/Gallery de la landing page.
+Se muestra en una cuadrícula de 3 imágenes que representan casos de éxito.
+
+DETALLES TÉCNICOS:
+- Nombre del archivo que debes usar: showcase-image-1.jpg (o .png)
+- Ubicación en el código: src/data/index.ts (línea 227)
+- URL actual: https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+- Tamaño recomendado: 800x600px (formato landscape)
+- Alt text actual: "Business professionals collaborating on financial strategy"
+- Título actual: "Strategic Financial Planning"
+
+CONTEXTO DE USO:
+- Se muestra en la sección "Financial Excellence in Action"
+- Es la primera imagen de una cuadrícula de 3 imágenes
+- Tiene un overlay gradiente oscuro
+- Incluye un título superpuesto: "Strategic Financial Planning"
+- Tiene efectos hover con zoom y transiciones suaves
+
+SUGERENCIAS PARA TU IMAGEN:
+- Debe representar planificación financiera estratégica
+- Profesionales trabajando en análisis financiero
+- Reuniones de equipo o colaboración
+- Colores profesionales que combinen con el tema
+- Formato landscape (4:3 ratio)
+
+INSTRUCCIONES:
+1. Coloca tu imagen en esta carpeta con el nombre: showcase-image-1.jpg
+2. Asegúrate de que tenga buena calidad y el tamaño recomendado
+3. La imagen se cargará automáticamente una vez que la coloques aquí 

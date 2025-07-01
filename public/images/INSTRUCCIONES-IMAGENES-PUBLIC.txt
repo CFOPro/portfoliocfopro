@@ -1,0 +1,88 @@
+INSTRUCCIONES PARA REEMPLAZAR IMÁGENES - CFOPro Landing Page
+============================================================
+
+IMPORTANTE: Las imágenes deben ir en esta carpeta: public/images/
+Esto es necesario para que Vite las sirva correctamente.
+
+IMÁGENES A REEMPLAZAR:
+======================
+
+1. HERO PRINCIPAL (IMAGEN MÁS IMPORTANTE)
+   - Archivo: hero-main-image.jpg
+   - Ubicación: Sección Hero (página principal)
+   - Tamaño: 1200x800px
+   - Contexto: Imagen principal debajo del título
+
+2. ABOUT SECTION (NUEVA - NO IDENTIFICADA ANTES)
+   - Archivo: about-team-image.jpg
+   - Ubicación: Sección About
+   - Tamaño: 800x600px
+   - Contexto: Imagen del equipo en la sección About
+
+3. SHOWCASE 1 - PLANIFICACIÓN ESTRATÉGICA
+   - Archivo: showcase-image-1.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Primera imagen de la cuadrícula
+
+4. SHOWCASE 2 - ANÁLISIS EN TIEMPO REAL
+   - Archivo: showcase-image-2.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Segunda imagen de la cuadrícula
+
+5. SHOWCASE 3 - LIDERAZGO EJECUTIVO
+   - Archivo: showcase-image-3.jpg
+   - Ubicación: Sección "Financial Excellence in Action"
+   - Tamaño: 800x600px
+   - Contexto: Tercera imagen de la cuadrícula
+
+PASOS PARA REEMPLAZAR:
+======================
+
+1. PREPARA TUS IMÁGENES:
+   - Redimensiona cada imagen al tamaño recomendado
+   - Optimiza la calidad (formato JPG o PNG)
+   - Asegúrate de que tengan buena resolución
+
+2. COLOCA LAS IMÁGENES:
+   - Copia cada imagen a esta carpeta: public/images/
+   - Usa EXACTAMENTE los nombres de archivo especificados
+   - No cambies las extensiones (.jpg o .png)
+
+3. VERIFICA LA CARGA:
+   - El servidor ya está corriendo en http://localhost:5173/portfoliocfopro/
+   - Refresca la página para ver los cambios
+   - Verifica en diferentes tamaños de pantalla
+
+NOMBRES DE ARCHIVO EXACTOS:
+===========================
+- hero-main-image.jpg
+- about-team-image.jpg
+- showcase-image-1.jpg
+- showcase-image-2.jpg
+- showcase-image-3.jpg
+
+RUTAS CORRECTAS EN EL CÓDIGO:
+=============================
+- /portfoliocfopro/images/hero-main-image.jpg
+- /portfoliocfopro/images/about-team-image.jpg
+- /portfoliocfopro/images/showcase-image-1.jpg
+- /portfoliocfopro/images/showcase-image-2.jpg
+- /portfoliocfopro/images/showcase-image-3.jpg
+
+CONSEJOS IMPORTANTES:
+====================
+- Mantén la calidad profesional de las imágenes
+- Usa colores que combinen con el tema azul/gris del sitio
+- Asegúrate de que las imágenes representen bien tu negocio
+- Las imágenes deben ser relevantes para servicios financieros
+- Formato landscape (más ancha que alta) para todas las imágenes
+
+¿NECESITAS AYUDA?
+=================
+Si tienes problemas con el reemplazo de imágenes, revisa:
+1. Que los nombres de archivo sean exactos
+2. Que las imágenes estén en public/images/
+3. Que hayas refrescado la página del navegador
+4. Que no haya errores en la consola del navegador (F12) 

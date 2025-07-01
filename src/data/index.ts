@@ -229,19 +229,19 @@ export const faqs: FAQ[] = [
 export const showcaseImages: ShowcaseImage[] = [
   {
     id: 'showcase-1',
-    src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    src: '/portfoliocfopro/images/showcase-image-1.jpg',
     alt: 'Business professionals collaborating on financial strategy',
     title: 'Strategic Financial Planning',
   },
   {
     id: 'showcase-2',
-    src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    src: '/portfoliocfopro/images/showcase-image-2.jpg',
     alt: 'Modern financial dashboard and analytics',
     title: 'Real-time Financial Analytics',
   },
   {
     id: 'showcase-3',
-    src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    src: '/portfoliocfopro/images/showcase-image-3.jpg',
     alt: 'CFO presenting to board of directors',
     title: 'Board-Level Financial Leadership',
   },
