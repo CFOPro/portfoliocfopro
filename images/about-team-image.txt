@@ -1,0 +1,35 @@
+REFERENCIA DE IMAGEN - ABOUT SECTION
+=====================================
+
+ARCHIVO: about-team-image.txt
+UBICACIÓN: public/images/
+
+DESCRIPCIÓN:
+Esta es la imagen que aparece en la sección About de la landing page.
+Se muestra junto a la información de la empresa y estadísticas.
+
+DETALLES TÉCNICOS:
+- Nombre del archivo que debes usar: about-team-image.jpg (o .png)
+- Ubicación en el código: src/components/sections/About.tsx (línea 44)
+- URL actual: https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+- Tamaño recomendado: 800x600px (formato landscape)
+- Alt text actual: "CFOPro team providing strategic financial leadership"
+
+CONTEXTO DE USO:
+- Se muestra en la sección About junto a la información de la empresa
+- Aparece en el lado derecho de la sección
+- Tiene un overlay gradiente sutil
+- Bordes redondeados y sombra suave
+- Se muestra junto a las estadísticas de la empresa
+
+SUGERENCIAS PARA TU IMAGEN:
+- Debe representar tu equipo o profesionales financieros
+- Idealmente mostrar colaboración o trabajo en equipo
+- Colores que combinen con el tema azul/gris del sitio
+- Alta calidad y profesional
+- Formato landscape (más ancha que alta)
+
+INSTRUCCIONES:
+1. Coloca tu imagen en esta carpeta con el nombre: about-team-image.jpg
+2. Asegúrate de que tenga buena calidad y el tamaño recomendado
+3. Refresca la página para ver los cambios 
