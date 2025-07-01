@@ -21,25 +21,13 @@ export const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-soft sticky top-0 z-50 border-b border-neutral-100">
       <Container>
-        <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-28">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              {/* Logo Icon */}
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-neutral-500 rounded-lg flex items-center justify-center shadow-soft">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Three greater-than symbols of increasing size */}
-                  <path d="M6 8L10 12L6 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M11 6L17 12L11 18" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M18 4L26 12L18 20" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-
+            <div className="flex items-center space-x-2 sm:space-x-3 bg-white p-1 rounded-lg">
+              {/* Outlook Image como logo principal */}
+              <img src="/portfoliocfopro/Outlook-4fivdc51.png" alt="Outlook" className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-lg bg-white" />
               {/* Company Name */}
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary-600">
-                <span>{APP_CONFIG.name.split(',')[0]}</span>
-                <span>, LLC</span>
-              </h1>
             </div>
           </div>
 

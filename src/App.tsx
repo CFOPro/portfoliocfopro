@@ -3,7 +3,6 @@ import {
   About,
   Contact,
   Hero,
-  LeadMagnet,
   Process,
   Services,
   Showcase,
