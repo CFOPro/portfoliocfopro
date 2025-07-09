@@ -189,6 +189,7 @@ export const LeadMagnet: React.FC = () => {
             </div>
 
             {/* Social Proof */}
+            {/*
             <div className='text-center mt-12 lg:mt-16 px-4 sm:px-0'>
               <p className='text-neutral-500 text-xs sm:text-sm mb-4 lg:mb-6 font-medium'>
                 Downloaded by Finance Leaders at
@@ -211,6 +212,7 @@ export const LeadMagnet: React.FC = () => {
                 </div>
               </div>
             </div>
+            */}
           </div>
         </Container>
       </section>
