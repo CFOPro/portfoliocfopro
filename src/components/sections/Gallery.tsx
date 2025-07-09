@@ -45,7 +45,7 @@ export const Showcase: React.FC = () => {
           ))}
         </div>
 
-        {/* Statistics Section */}
+        {/* Statistics Section - Commented out
         <div className="bg-white rounded-xl lg:rounded-2xl p-6 sm:p-8 lg:p-12 shadow-soft mb-16 lg:mb-20 mx-4 sm:mx-0">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <div className="text-center">
@@ -66,6 +66,7 @@ export const Showcase: React.FC = () => {
             </div>
           </div>
         </div>
+        */}
 
         {/* Call to Action */}
         <div className="relative bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl lg:rounded-3xl p-6 sm:p-8 lg:p-16 text-center text-white overflow-hidden mx-4 sm:mx-0">
